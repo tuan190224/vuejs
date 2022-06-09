@@ -11,6 +11,10 @@ import InputText from 'primevue/inputtext';
 import Password from 'primevue/password';
 import SpeedDial from 'primevue/speeddial';
 
+import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
+import ColumnGroup from 'primevue/columngroup';     //optional for column grouping
+import Row from 'primevue/row';                     //optional for row
 
 
 import 'primevue/resources/themes/saga-blue/theme.css'       //theme
@@ -25,6 +29,10 @@ app.component('AutoComplete',AutoComplete)
 app.component('SpeedDial',SpeedDial)
 app.component('InputText',InputText)
 app.component('Password',Password)
+app.component('DataTable',DataTable)
+app.component('Column',Column)
+app.component('ColumnGroup',ColumnGroup)
+app.component('Row',Row)
 
 
 app.use(createPinia());
