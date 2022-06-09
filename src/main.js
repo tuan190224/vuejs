@@ -11,6 +11,8 @@ import InputText from 'primevue/inputtext';
 import Password from 'primevue/password';
 import SpeedDial from 'primevue/speeddial';
 
+
+
 import 'primevue/resources/themes/saga-blue/theme.css'       //theme
 import 'primevue/resources/primevue.min.css'                //core css
 import 'primeicons/primeicons.css'      
@@ -23,6 +25,7 @@ app.component('AutoComplete',AutoComplete)
 app.component('SpeedDial',SpeedDial)
 app.component('InputText',InputText)
 app.component('Password',Password)
+
 
 app.use(createPinia());
 app.use(router);

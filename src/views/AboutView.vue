@@ -1,7 +1,9 @@
+<script setup>
+import Btn1 from "@/components/btn/Btn1.vue"
 
-
+</script>
 <template>
-  <div class="about flex flex-column  ">
+  <div id="app" class="about flex flex-column  ">
     <h1>This is an about page</h1>
 
 
@@ -40,10 +42,10 @@
        
   </div>
 
-  
+  <Btn1/>
 </template>
 
-<script>
+ <script>
 
 
 export default{
