@@ -59,7 +59,7 @@ import Btn1 from "@/components/btn/Btn1.vue";
             ></Password>
         </div>
         <Button @click="hidden = !hidden">{{ hidden ? "on" : "off" }} </Button>
-        <Button @click="handleClick($event)"></Button>
+        <Button v-model="a" :class="{ Dnone: hidden }">{{ a }}</Button>
     </div>
 
     <Btn1 />
@@ -75,8 +75,10 @@ const app = {
             newPass: "",
             reNewPass: "",
             hidden: false,
+            a: 2,
         };
     },
+    beforeUpdate() {},
 };
 export default app;
 </script>
@@ -84,6 +86,9 @@ export default app;
 <style>
 @media (min-width: 1024px) {
     .about {
+    }
+    .Dnone {
+        display: none;
     }
 }
 </style>
